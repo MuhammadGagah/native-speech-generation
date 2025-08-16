@@ -1,5 +1,5 @@
 addon/doc/*.css
-addon/doc/en/
+#addon/doc/en/
 addon/globalPlugins/lib/
 *_docHandler.py
 *.html
