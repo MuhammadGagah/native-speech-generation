@@ -1,0 +1,357 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'NativeSpeechGeneration' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 'NativeSpeechGeneration' '1.0'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2025-08-16 14:51+0700\n"
+"PO-Revision-Date: 2025-08-16 14:54+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#: addon\installTasks.py:18
+msgid ""
+"The Native Speech Generation add-on has been installed successfully.\n"
+"\n"
+"To use this add-on, you must obtain a Gemini API key from Google AI Studio "
+"and enter it in the add-on's settings (NVDA Menu -> Tools -> Native Speech "
+"Generation).\n"
+"\n"
+"To run the Native Speech Generation add-on, you can press the shortcut "
+"NVDA+Control+Shift+G (this can be changed via NVDA Menu -> Preferences -> "
+"Input Gestures, under the Native Speech Generation category).\n"
+"\n"
+"Please note that this add-on bundles external libraries. If you encounter "
+"any issues, please ensure your NVDA version is compatible."
+msgstr ""
+"Add-on Native Speech Generation telah berhasil dipasang.\n"
+"\n"
+"Untuk menggunakan add-on ini, Anda harus mendapatkan kunci API Gemini dari "
+"Google AI Studio dan memasukkannya ke dalam pengaturan add-on (Menu NVDA -> "
+"Alat -> Native Speech Generation).\n"
+"\n"
+"Untuk menjalankan add-on Native Speech Generation, Anda dapat menekan "
+"pintasan NVDA+Control+Shift+G (ini dapat diubah melalui Menu NVDA -> "
+"Preferensi -> Gerakan Input, di bawah kategori Native Speech Generation).\n"
+"\n"
+"Harap dicatat bahwa add-on ini menyertakan pustaka eksternal. Jika Anda "
+"mengalami masalah, pastikan versi NVDA Anda kompatibel."
+
+#: addon\installTasks.py:26
+msgid "Native Speech Generation Installation Complete"
+msgstr "Installasi Native Speech Generation Sukses"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:137
+#: addon\globalPlugins\nativeSpeechGeneration.py:614
+msgid "Native Speech Generation"
+msgstr "Native Speech Generation"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:141
+msgid "&GEMINI API Key:"
+msgstr "&Kata kunci Gemini API:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:146
+msgid "&How to get API Key..."
+msgstr "&Cara Mendapatkan Kunci API..."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:157
+msgid "Native Speech Generation (Gemini TTS)"
+msgstr "Native Speech Generation (Gemini TTS)"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:179
+msgid "&Type text to convert here:"
+msgstr "&Masukkan teks yang ingin anda jadikan audio:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:184
+msgid "&Style instructions (optional):"
+msgstr "&Gaya bicara TTS (optional):"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:190
+msgid "Select &Model:"
+msgstr "Pilih &Model:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:191
+msgid "Flash (Standard Quality)"
+msgstr "Flash (kualitas standar)"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:191
+msgid "Pro (High Quality)"
+msgstr "Pro (kualitas tinggi)"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:196
+msgid "Single-speaker"
+msgstr "Satu pembicara"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:197
+msgid "Multi-speaker (2)"
+msgstr "Multi pembicara"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:204
+msgid "Advanced Settings (&Temperature)"
+msgstr "Pengaturan lanjutan (&Temperature)"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:212
+msgid "Temperature:"
+msgstr "Temperature:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:229
+msgid "Select &Voice:"
+msgstr "Pilih &Suara:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:230
+#: addon\globalPlugins\nativeSpeechGeneration.py:243
+msgid "Loading voices..."
+msgstr "Memuat suara ..."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:240
+msgid "Speaker 1 Name:"
+msgstr "Nama Pembicara 1:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:242
+#: addon\globalPlugins\nativeSpeechGeneration.py:255
+msgid "Voice:"
+msgstr "Suara:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:253
+msgid "Speaker 2 Name:"
+msgstr "Nama Pembicara 2:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:268
+#: addon\globalPlugins\nativeSpeechGeneration.py:440
+msgid "&Generate Speech"
+msgstr "&Hasilkan Audio"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:271
+msgid "&Play"
+msgstr "&Putar"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:275
+msgid "Save &Audio"
+msgstr "Simpan &Audio"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:283
+msgid "API Key Settings"
+msgstr "Pengaturan Kunci API"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:285
+msgid "View voices in AI Studio"
+msgstr "Periksa Suara di AI Studio"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:290
+msgid "&Close"
+msgstr "&Tutup"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:337
+msgid ""
+"google-genai library not installed. Install with: pip install google-genai"
+msgstr ""
+"library google-genai tidak diinstall. Silahkan install dengan cara: pip "
+"install google-genai"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:337
+#: addon\globalPlugins\nativeSpeechGeneration.py:340
+#: addon\globalPlugins\nativeSpeechGeneration.py:344
+#: addon\globalPlugins\nativeSpeechGeneration.py:360
+#: addon\globalPlugins\nativeSpeechGeneration.py:394
+#: addon\globalPlugins\nativeSpeechGeneration.py:408
+#: addon\globalPlugins\nativeSpeechGeneration.py:437
+#: addon\globalPlugins\nativeSpeechGeneration.py:502
+#: addon\globalPlugins\nativeSpeechGeneration.py:515
+#: addon\globalPlugins\nativeSpeechGeneration.py:520
+#: addon\globalPlugins\nativeSpeechGeneration.py:525
+#: addon\globalPlugins\nativeSpeechGeneration.py:529
+#: addon\globalPlugins\nativeSpeechGeneration.py:542
+#: addon\globalPlugins\nativeSpeechGeneration.py:633
+msgid "Error"
+msgstr "Kesalahan"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:340
+msgid ""
+"No GEMINI_API_KEY configured. Set it in NVDA settings under "
+"NativeSpeechGeneration."
+msgstr ""
+"Tidak ada kunci API  Gemini yang anda masukkan. Silahkan atur terlebih "
+"dahulu di pengaturan NVDA, kategory NativeSpeechGeneration."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:344
+msgid "Please enter text to generate."
+msgstr "Harap masukkan teks terlebih dahulu."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:347
+msgid "Generating..."
+msgstr "Sedang memproses..."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:354
+msgid "Generating speech, please wait..."
+msgstr "Sedang menghasilkan audio, harap tunggu..."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:360
+#, python-brace-format
+msgid "Failed to initialize Google GenAI client: {error}"
+msgstr "Gagal menginisialisasi klien Google Genai: {error}"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:365
+msgid "Failed to generate audio."
+msgstr "Gagal menghasilkan audio."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:367
+msgid "Generation complete."
+msgstr "Selesai membuat audio."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:376
+#, python-brace-format
+msgid "Audio generated, but failed to play automatically: {error}"
+msgstr "Audio dihasilkan, tetapi gagal diputar secara otomatis: {error}"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:376
+msgid "Info"
+msgstr "Info"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:394
+msgid "Please select a voice for Speaker 1."
+msgstr "Pilih suara pembicara pertama terlebih dahulu."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:408
+msgid "Please select voices for both speakers."
+msgstr "Pilih suara untuk kedua pembicara."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:435
+msgid "An error occurred during generation."
+msgstr "Terjadi kesalahan selama menghasilkan audio."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:437
+#, python-brace-format
+msgid "An unexpected error occurred: {error}"
+msgstr "Terjadi kesalahan yang tidak terduga: {error}"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:502
+msgid "No inline audio data returned by model."
+msgstr "Tidak ada data audio inline yang dikembalikan oleh model."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:515
+#, python-brace-format
+msgid "Failed to generate speech: {error}"
+msgstr "Gagal menghasilkan ucapan: {error}"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:520
+msgid "No audio available to play."
+msgstr "Tidak ada audio yang tersedia untuk dimainkan."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:525
+#, python-brace-format
+msgid "Failed to play audio: {error}"
+msgstr "Gagal memainkan audio: {error}"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:529
+msgid "No generated audio to save."
+msgstr "Tidak ada audio yang dihasilkan untuk disimpan."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:531
+msgid "Save Audio File"
+msgstr "Simpan file audio"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:540
+#, python-brace-format
+msgid "Audio saved to {path}"
+msgstr "Audio disimpan ke {path}"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:540
+msgid "Success"
+msgstr "Success"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:542
+#, python-brace-format
+msgid "Failed to save audio: {error}"
+msgstr "Gagal menyimpan audio: {error}"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:609
+msgid "&Native Speech Generation"
+msgstr "&Native Speech Generation"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:609
+msgid "Generate speech using Gemini TTS"
+msgstr "Hasilkan Ucapan Menggunakan Gemini TTS"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:613
+msgid "Open the Native Speech Generation dialog"
+msgstr "Membuka add-on Native Speech Generation"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:633
+#, python-brace-format
+msgid "Failed to open Native Speech Generation dialog: {error}"
+msgstr "Gagal menjalankan add-on Native Speech Generation: {error}"
+
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+#: buildVars.py:21
+msgid "NativeSpeechGeneration"
+msgstr "NativeSpeechGeneration"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
+msgid ""
+"Harness the power of Google's state-of-the-art Gemini AI for high-quality "
+"speech generation directly within NVDA. This add-on provides a user-friendly "
+"dialog to convert text into natural-sounding audio.\n"
+"\n"
+"Key Features:\n"
+"- High-Quality Voices: Choose between Gemini Pro for premium, life-like "
+"speech and Gemini Flash for standard quality, responsive generation.\n"
+"- Single and Multi-Speaker Modes: Easily generate audio for a single speaker "
+"or create dynamic dialogues with two distinct speakers. Simply format your "
+"text with \"SpeakerName:\" to assign voices.\n"
+"- Advanced Voice Control: Fine-tune the output by adjusting the temperature "
+"for more creative or stable results, and provide custom style instructions.\n"
+"- Accessible Interface: All controls are fully accessible, including a "
+"collapsible panel for advanced settings to keep the interface clean and easy "
+"to navigate.\n"
+"- Seamless Workflow: The add-on provides instant audio playback upon "
+"generation and allows you to save the resulting .wav file for later use.\n"
+"\n"
+"To get started, obtain a Gemini API key from Google AI Studio and enter it "
+"in the add-on's settings panel, found under NVDA's Tools menu."
+msgstr ""
+"Manfaatkan kekuatan AI Gemini canggih dari Google untuk menghasilkan suara "
+"berkualitas tinggi langsung di dalam NVDA.\n"
+"Add-on ini menyediakan dialog yang ramah pengguna untuk mengubah teks "
+"menjadi audio yang terdengar alami.\n"
+"\n"
+"Fitur Utama:\n"
+"- Suara Berkualitas Tinggi: Pilih antara Gemini Pro untuk suara premium yang "
+"mirip dengan kehidupan nyata dan Gemini Flash untuk kualitas standar yang "
+"responsif.\n"
+"\n"
+"- Mode Satu dan Multi-Pembicara: Dengan mudah hasilkan audio untuk satu "
+"pembicara atau buat dialog dinamis dengan dua pembicara yang berbeda. Cukup "
+"format teks Anda dengan \"NamaPembicara:\" untuk menetapkan suara.\n"
+"\n"
+"- Kontrol Suara Lanjutan: Sesuaikan output dengan mengatur temperature untuk "
+"hasil yang lebih kreatif atau stabil, dan berikan instruksi gaya pembicara "
+"sesuai keinginan.\n"
+"\n"
+"- Antarmuka yang Dapat Diakses: Semua kontrol sepenuhnya dapat diakses, "
+"termasuk panel yang dapat diciutkan untuk pengaturan lanjutan agar antarmuka "
+"tetap bersih dan mudah dinavigasi.\n"
+"\n"
+"- Alur Kerja yang Lancar: Add-on ini menyediakan pemutaran audio instan "
+"setelah pembuatan dan memungkinkan Anda menyimpan file .wav yang dihasilkan "
+"untuk digunakan nanti.\n"
+"Untuk memulai, dapatkan kunci API Gemini dari Google AI Studio dan masukkan "
+"ke dalam panel pengaturan add-on, yang dapat ditemukan di menu Alat NVDA."
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:38
+msgid "Initial Release"
+msgstr "Rilis awal"
