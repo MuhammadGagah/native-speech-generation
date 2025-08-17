@@ -33,7 +33,7 @@ Dengan antarmuka sederhana dan ramah pengguna, Anda dapat mengubah teks menjadi 
 
 ## Download
 
-Anda dapat mengunduh file add-on terbaru dari halaman [Releases](https://github.com/muhammadGagah/native-speech-nvda/releases).  
+Anda dapat mengunduh file add-on terbaru dari halaman [Releases]([https://github.com/muhammadGagah/native-speech-nvda/releases](https://github.com/MuhammadGagah/native-speech-generation/releases/)).  
 Install seperti add-on NVDA biasa, lalu restart NVDA.
 
 ---
