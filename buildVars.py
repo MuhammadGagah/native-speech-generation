@@ -32,22 +32,22 @@ Key Features:
 
 To get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu."""),
 	# version
-	addon_version="1.0",
+	addon_version="1.1",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""Initial Release"""),
+	addon_changelog=_("""Added ability to play voice samples directly from voice selection, refactored code for better readability, improved error handling and UI layout, optimized voice selection logic and threading, and enhanced audio format detection with WAV conversion."""),
 	# Author(s)
 	addon_author="Muhammad <muha.aku@gmail.com>",
 	# URL for the add-on documentation support
-	addon_url=None,
+	addon_url="https://github.com/MuhammadGagah/native-speech-generation/",
 	# URL for the add-on repository where the source code can be found
-	addon_sourceURL=None,
+	addon_sourceURL="https://github.com/MuhammadGagah/native-speech-generation/",
 	# Documentation file name
 	addon_docFileName="readme.html",
 	# Minimum NVDA version supported (e.g. "2019.3.0", minor version is optional)
 	addon_minimumNVDAVersion=2023.1,
 	# Last NVDA version supported/tested (e.g. "2024.4.0", ideally more recent than minimum version)
-	addon_lastTestedNVDAVersion=2025.1,
+	addon_lastTestedNVDAVersion=2025.2,
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!

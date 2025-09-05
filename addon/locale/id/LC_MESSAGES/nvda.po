@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'NativeSpeechGeneration' '1.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2025-08-16 14:51+0700\n"
-"PO-Revision-Date: 2025-08-16 14:54+0700\n"
+"POT-Creation-Date: 2025-09-05 20:02+0700\n"
+"PO-Revision-Date: 2025-09-05 20:06+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.7\n"
 
 #: addon\installTasks.py:18
 msgid ""
@@ -50,131 +50,144 @@ msgstr ""
 msgid "Native Speech Generation Installation Complete"
 msgstr "Installasi Native Speech Generation Sukses"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:137
-#: addon\globalPlugins\nativeSpeechGeneration.py:614
+#: addon\globalPlugins\nativeSpeechGeneration.py:213
+#, python-brace-format
+msgid "Audio generated, but failed to play automatically: {error}"
+msgstr "Audio dihasilkan, tetapi gagal diputar secara otomatis: {error}"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:214
+msgid "Info"
+msgstr "Info"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:218
+#: addon\globalPlugins\nativeSpeechGeneration.py:834
 msgid "Native Speech Generation"
 msgstr "Native Speech Generation"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:141
+#: addon\globalPlugins\nativeSpeechGeneration.py:222
 msgid "&GEMINI API Key:"
 msgstr "&Kata kunci Gemini API:"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:146
+#: addon\globalPlugins\nativeSpeechGeneration.py:227
 msgid "&How to get API Key..."
 msgstr "&Cara Mendapatkan Kunci API..."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:157
+#: addon\globalPlugins\nativeSpeechGeneration.py:244
 msgid "Native Speech Generation (Gemini TTS)"
 msgstr "Native Speech Generation (Gemini TTS)"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:179
+#. Text input area
+#: addon\globalPlugins\nativeSpeechGeneration.py:273
 msgid "&Type text to convert here:"
 msgstr "&Masukkan teks yang ingin anda jadikan audio:"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:184
+#. Optional style instructions
+#: addon\globalPlugins\nativeSpeechGeneration.py:279
 msgid "&Style instructions (optional):"
 msgstr "&Gaya bicara TTS (optional):"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:190
+#: addon\globalPlugins\nativeSpeechGeneration.py:286
 msgid "Select &Model:"
 msgstr "Pilih &Model:"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:191
+#: addon\globalPlugins\nativeSpeechGeneration.py:287
 msgid "Flash (Standard Quality)"
 msgstr "Flash (kualitas standar)"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:191
+#: addon\globalPlugins\nativeSpeechGeneration.py:287
 msgid "Pro (High Quality)"
 msgstr "Pro (kualitas tinggi)"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:196
+#: addon\globalPlugins\nativeSpeechGeneration.py:293
 msgid "Single-speaker"
 msgstr "Satu pembicara"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:197
+#: addon\globalPlugins\nativeSpeechGeneration.py:294
 msgid "Multi-speaker (2)"
 msgstr "Multi pembicara"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:204
+#. Advanced settings (Temperature)
+#: addon\globalPlugins\nativeSpeechGeneration.py:303
 msgid "Advanced Settings (&Temperature)"
 msgstr "Pengaturan lanjutan (&Temperature)"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:212
+#: addon\globalPlugins\nativeSpeechGeneration.py:312
 msgid "Temperature:"
 msgstr "Temperature:"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:229
-msgid "Select &Voice:"
-msgstr "Pilih &Suara:"
-
-#: addon\globalPlugins\nativeSpeechGeneration.py:230
-#: addon\globalPlugins\nativeSpeechGeneration.py:243
-msgid "Loading voices..."
-msgstr "Memuat suara ..."
-
-#: addon\globalPlugins\nativeSpeechGeneration.py:240
-msgid "Speaker 1 Name:"
-msgstr "Nama Pembicara 1:"
-
-#: addon\globalPlugins\nativeSpeechGeneration.py:242
-#: addon\globalPlugins\nativeSpeechGeneration.py:255
-msgid "Voice:"
-msgstr "Suara:"
-
-#: addon\globalPlugins\nativeSpeechGeneration.py:253
-msgid "Speaker 2 Name:"
-msgstr "Nama Pembicara 2:"
-
-#: addon\globalPlugins\nativeSpeechGeneration.py:268
-#: addon\globalPlugins\nativeSpeechGeneration.py:440
+#: addon\globalPlugins\nativeSpeechGeneration.py:335
+#: addon\globalPlugins\nativeSpeechGeneration.py:638
 msgid "&Generate Speech"
 msgstr "&Hasilkan Audio"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:271
+#: addon\globalPlugins\nativeSpeechGeneration.py:339
 msgid "&Play"
 msgstr "&Putar"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:275
+#: addon\globalPlugins\nativeSpeechGeneration.py:344
 msgid "Save &Audio"
 msgstr "Simpan &Audio"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:283
+#: addon\globalPlugins\nativeSpeechGeneration.py:353
 msgid "API Key Settings"
 msgstr "Pengaturan Kunci API"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:285
+#: addon\globalPlugins\nativeSpeechGeneration.py:355
 msgid "View voices in AI Studio"
 msgstr "Periksa Suara di AI Studio"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:290
+#. Close
+#: addon\globalPlugins\nativeSpeechGeneration.py:362
 msgid "&Close"
 msgstr "&Tutup"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:337
+#: addon\globalPlugins\nativeSpeechGeneration.py:375
+msgid "Select &Voice:"
+msgstr "Pilih &Suara:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:376
+#: addon\globalPlugins\nativeSpeechGeneration.py:398
+#: addon\globalPlugins\nativeSpeechGeneration.py:413
+msgid "Loading voices..."
+msgstr "Memuat suara ..."
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:395
+msgid "Speaker 1 Name:"
+msgstr "Nama Pembicara 1:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:397
+#: addon\globalPlugins\nativeSpeechGeneration.py:412
+msgid "Voice:"
+msgstr "Suara:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:410
+msgid "Speaker 2 Name:"
+msgstr "Nama Pembicara 2:"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:514
 msgid ""
 "google-genai library not installed. Install with: pip install google-genai"
 msgstr ""
 "library google-genai tidak diinstall. Silahkan install dengan cara: pip "
 "install google-genai"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:337
-#: addon\globalPlugins\nativeSpeechGeneration.py:340
-#: addon\globalPlugins\nativeSpeechGeneration.py:344
-#: addon\globalPlugins\nativeSpeechGeneration.py:360
-#: addon\globalPlugins\nativeSpeechGeneration.py:394
-#: addon\globalPlugins\nativeSpeechGeneration.py:408
-#: addon\globalPlugins\nativeSpeechGeneration.py:437
-#: addon\globalPlugins\nativeSpeechGeneration.py:502
 #: addon\globalPlugins\nativeSpeechGeneration.py:515
 #: addon\globalPlugins\nativeSpeechGeneration.py:520
 #: addon\globalPlugins\nativeSpeechGeneration.py:525
-#: addon\globalPlugins\nativeSpeechGeneration.py:529
-#: addon\globalPlugins\nativeSpeechGeneration.py:542
-#: addon\globalPlugins\nativeSpeechGeneration.py:633
+#: addon\globalPlugins\nativeSpeechGeneration.py:550
+#: addon\globalPlugins\nativeSpeechGeneration.py:582
+#: addon\globalPlugins\nativeSpeechGeneration.py:597
+#: addon\globalPlugins\nativeSpeechGeneration.py:630
+#: addon\globalPlugins\nativeSpeechGeneration.py:692
+#: addon\globalPlugins\nativeSpeechGeneration.py:712
+#: addon\globalPlugins\nativeSpeechGeneration.py:718
+#: addon\globalPlugins\nativeSpeechGeneration.py:724
+#: addon\globalPlugins\nativeSpeechGeneration.py:745
+#: addon\globalPlugins\nativeSpeechGeneration.py:856
 msgid "Error"
 msgstr "Kesalahan"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:340
+#: addon\globalPlugins\nativeSpeechGeneration.py:519
 msgid ""
 "No GEMINI_API_KEY configured. Set it in NVDA settings under "
 "NativeSpeechGeneration."
@@ -182,110 +195,112 @@ msgstr ""
 "Tidak ada kunci API  Gemini yang anda masukkan. Silahkan atur terlebih "
 "dahulu di pengaturan NVDA, kategory NativeSpeechGeneration."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:344
+#: addon\globalPlugins\nativeSpeechGeneration.py:525
 msgid "Please enter text to generate."
 msgstr "Harap masukkan teks terlebih dahulu."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:347
+#: addon\globalPlugins\nativeSpeechGeneration.py:530
 msgid "Generating..."
 msgstr "Sedang memproses..."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:354
+#: addon\globalPlugins\nativeSpeechGeneration.py:541
 msgid "Generating speech, please wait..."
 msgstr "Sedang menghasilkan audio, harap tunggu..."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:360
+#: addon\globalPlugins\nativeSpeechGeneration.py:549
 #, python-brace-format
 msgid "Failed to initialize Google GenAI client: {error}"
 msgstr "Gagal menginisialisasi klien Google Genai: {error}"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:365
+#: addon\globalPlugins\nativeSpeechGeneration.py:559
 msgid "Failed to generate audio."
 msgstr "Gagal menghasilkan audio."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:367
+#: addon\globalPlugins\nativeSpeechGeneration.py:561
 msgid "Generation complete."
 msgstr "Selesai membuat audio."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:376
-#, python-brace-format
-msgid "Audio generated, but failed to play automatically: {error}"
-msgstr "Audio dihasilkan, tetapi gagal diputar secara otomatis: {error}"
-
-#: addon\globalPlugins\nativeSpeechGeneration.py:376
-msgid "Info"
-msgstr "Info"
-
-#: addon\globalPlugins\nativeSpeechGeneration.py:394
+#: addon\globalPlugins\nativeSpeechGeneration.py:581
 msgid "Please select a voice for Speaker 1."
 msgstr "Pilih suara pembicara pertama terlebih dahulu."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:408
+#: addon\globalPlugins\nativeSpeechGeneration.py:596
 msgid "Please select voices for both speakers."
 msgstr "Pilih suara untuk kedua pembicara."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:435
+#: addon\globalPlugins\nativeSpeechGeneration.py:627
 msgid "An error occurred during generation."
 msgstr "Terjadi kesalahan selama menghasilkan audio."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:437
+#: addon\globalPlugins\nativeSpeechGeneration.py:629
 #, python-brace-format
 msgid "An unexpected error occurred: {error}"
 msgstr "Terjadi kesalahan yang tidak terduga: {error}"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:502
+#: addon\globalPlugins\nativeSpeechGeneration.py:691
 msgid "No inline audio data returned by model."
 msgstr "Tidak ada data audio inline yang dikembalikan oleh model."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:515
+#: addon\globalPlugins\nativeSpeechGeneration.py:711
 #, python-brace-format
 msgid "Failed to generate speech: {error}"
 msgstr "Gagal menghasilkan ucapan: {error}"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:520
+#: addon\globalPlugins\nativeSpeechGeneration.py:718
 msgid "No audio available to play."
 msgstr "Tidak ada audio yang tersedia untuk dimainkan."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:525
-#, python-brace-format
-msgid "Failed to play audio: {error}"
-msgstr "Gagal memainkan audio: {error}"
-
-#: addon\globalPlugins\nativeSpeechGeneration.py:529
+#: addon\globalPlugins\nativeSpeechGeneration.py:724
 msgid "No generated audio to save."
 msgstr "Tidak ada audio yang dihasilkan untuk disimpan."
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:531
+#: addon\globalPlugins\nativeSpeechGeneration.py:730
 msgid "Save Audio File"
 msgstr "Simpan file audio"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:540
+#: addon\globalPlugins\nativeSpeechGeneration.py:741
 #, python-brace-format
 msgid "Audio saved to {path}"
 msgstr "Audio disimpan ke {path}"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:540
+#: addon\globalPlugins\nativeSpeechGeneration.py:742
 msgid "Success"
 msgstr "Success"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:542
+#: addon\globalPlugins\nativeSpeechGeneration.py:744
 #, python-brace-format
 msgid "Failed to save audio: {error}"
 msgstr "Gagal menyimpan audio: {error}"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:609
+#: addon\globalPlugins\nativeSpeechGeneration.py:753
+msgid "No voice selected"
+msgstr "Tidak ada suara yang dipilih"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:765
+msgid "Sample not available"
+msgstr "Suara sampel tidak tersedia"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:770
+msgid "Playing voice sample"
+msgstr "Memainkan sampel suara"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:774
+msgid "Failed to play sample"
+msgstr "Gagal memainkan sampel audio"
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:829
 msgid "&Native Speech Generation"
 msgstr "&Native Speech Generation"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:609
+#: addon\globalPlugins\nativeSpeechGeneration.py:829
 msgid "Generate speech using Gemini TTS"
 msgstr "Hasilkan Ucapan Menggunakan Gemini TTS"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:613
+#: addon\globalPlugins\nativeSpeechGeneration.py:833
 msgid "Open the Native Speech Generation dialog"
 msgstr "Membuka add-on Native Speech Generation"
 
-#: addon\globalPlugins\nativeSpeechGeneration.py:633
+#: addon\globalPlugins\nativeSpeechGeneration.py:855
 #, python-brace-format
 msgid "Failed to open Native Speech Generation dialog: {error}"
 msgstr "Gagal menjalankan add-on Native Speech Generation: {error}"
@@ -353,5 +368,17 @@ msgstr ""
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:38
-msgid "Initial Release"
-msgstr "Rilis awal"
+msgid ""
+"Added ability to play voice samples directly from voice selection, "
+"refactored code for better readability, improved error handling and UI "
+"layout, optimized voice selection logic and threading, and enhanced audio "
+"format detection with WAV conversion."
+msgstr ""
+"Menambahkan kemampuan untuk memainkan sampel suara langsung dari pemilihan "
+"suara, kode refactored untuk keterbacaan yang lebih baik, penanganan "
+"kesalahan yang lebih baik dan tata letak UI, logika pemilihan suara yang "
+"dioptimalkan dan threading, dan deteksi format audio yang ditingkatkan "
+"dengan konversi WAV."
+
+#~ msgid "Initial Release"
+#~ msgstr "Rilis awal"
