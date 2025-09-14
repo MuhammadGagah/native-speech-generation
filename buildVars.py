@@ -32,10 +32,10 @@ Key Features:
 
 To get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu."""),
 	# version
-	addon_version="1.1",
+	addon_version="1.2",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""Added ability to play voice samples directly from voice selection, refactored code for better readability, improved error handling and UI layout, optimized voice selection logic and threading, and enhanced audio format detection with WAV conversion."""),
+	addon_changelog=_("""Improved dialog stability with safe wx.CallAfter message handling, added API key visibility toggle in settings, implemented automatic NVDA restart after dependency installation, enhanced multi-speaker voice handling and sample playback, standardized error dialogs, and refactored code for cleaner structure and consistency."""),
 	# Author(s)
 	addon_author="Muhammad <muha.aku@gmail.com>",
 	# URL for the add-on documentation support
