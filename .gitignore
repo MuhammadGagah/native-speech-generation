@@ -5,7 +5,6 @@ addon/globalPlugins/lib/
 *.html
 manifest.ini
 *.mo
-*.pot
 *.py[co]
 *.nvda-addon
 .sconsign.dblite

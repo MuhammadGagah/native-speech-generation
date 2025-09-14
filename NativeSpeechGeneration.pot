@@ -1,0 +1,392 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'NativeSpeechGeneration' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 'NativeSpeechGeneration' '1.2'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2025-09-14 21:46+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: addon\installTasks.py:29
+msgid "Dependencies already satisfied."
+msgstr ""
+
+#: addon\installTasks.py:36
+msgid "Downloading libraries..."
+msgstr ""
+
+#. Update progress, scaling download to 80% of the task
+#: addon\installTasks.py:50
+msgid "Downloading..."
+msgstr ""
+
+#: addon\installTasks.py:55
+msgid "Extracting libraries..."
+msgstr ""
+
+#: addon\installTasks.py:62
+msgid "Extraction complete."
+msgstr ""
+
+#: addon\installTasks.py:71
+#, python-brace-format
+msgid ""
+"Failed to download or extract required libraries. The add-on might not work "
+"correctly.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+
+#: addon\installTasks.py:72 addon\globalPlugins\nativeSpeechGeneration.py:55
+#: addon\globalPlugins\nativeSpeechGeneration.py:475
+#: addon\globalPlugins\nativeSpeechGeneration.py:478
+#: addon\globalPlugins\nativeSpeechGeneration.py:482
+#: addon\globalPlugins\nativeSpeechGeneration.py:496
+#: addon\globalPlugins\nativeSpeechGeneration.py:538
+#: addon\globalPlugins\nativeSpeechGeneration.py:569
+#: addon\globalPlugins\nativeSpeechGeneration.py:582
+#: addon\globalPlugins\nativeSpeechGeneration.py:600
+#: addon\globalPlugins\nativeSpeechGeneration.py:690
+msgid "Error"
+msgstr ""
+
+#: addon\installTasks.py:91 addon\installTasks.py:139
+msgid "Installing Dependencies"
+msgstr ""
+
+#: addon\installTasks.py:92
+msgid "Checking for required libraries..."
+msgstr ""
+
+#: addon\installTasks.py:99
+msgid "Installation complete!"
+msgstr ""
+
+#. Translators: Shown after successful dependency installation, with instructions for the user.
+#: addon\installTasks.py:112
+msgid ""
+"The Native Speech Generation add-on has been installed successfully.\n"
+"\n"
+"To use this add-on, you must obtain a Gemini API key from Google AI Studio "
+"and enter it in the add-on's settings (NVDA Menu -> Preferences -> Settings "
+"-> Native Speech Generation).\n"
+"\n"
+"To open the generation dialog, you can press the shortcut "
+"NVDA+Control+Shift+G (this can be changed via NVDA Menu -> Preferences -> "
+"Input Gestures).\n"
+msgstr ""
+
+#: addon\installTasks.py:118
+msgid "Native Speech Generation Installation Complete"
+msgstr ""
+
+#. Translators: Shown if dependency installation fails.
+#: addon\installTasks.py:123
+msgid ""
+"Dependency installation failed. The Native Speech Generation add-on might "
+"not work correctly. Please review the log for errors."
+msgstr ""
+
+#: addon\installTasks.py:124
+msgid "Installation Warning"
+msgstr ""
+
+#: addon\installTasks.py:136
+msgid ""
+"Required libraries for Native Speech Generation are missing. They will be "
+"downloaded and installed now.\n"
+"\n"
+"Click OK to continue."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:54
+msgid "Could not find the installation script. Please reinstall the add-on."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:80
+#: addon\globalPlugins\nativeSpeechGeneration.py:661
+msgid "Open the Native Speech Generation dialog"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:81
+#: addon\globalPlugins\nativeSpeechGeneration.py:214
+#: addon\globalPlugins\nativeSpeechGeneration.py:662
+msgid "Native Speech Generation"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:88
+msgid ""
+"Native Speech Generation is installing dependencies. Please restart NVDA for "
+"the changes to take effect."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:90
+msgid "Restart Required"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:209
+#, python-brace-format
+msgid "Audio generated, but failed to play automatically: {error}"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:210
+msgid "Info"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:234
+msgid "&Gemini API Key:"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:236
+msgid "Show API Key"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:239
+msgid "&How to get API Key..."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:270
+msgid "Native Speech Generation (Gemini TTS)"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:288
+msgid "&Type text to convert here:"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:292
+msgid "&Style instructions (optional):"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:297
+msgid "Select &Model:"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:298
+msgid "Flash (Standard Quality)"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:298
+msgid "Pro (High Quality)"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:303
+msgid "Single-speaker"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:304
+msgid "Multi-speaker (2)"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:311
+msgid "Advanced Settings (&Temperature)"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:318
+msgid "Temperature:"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:335
+#: addon\globalPlugins\nativeSpeechGeneration.py:543
+msgid "&Generate Speech"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:338
+msgid "&Play"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:342
+msgid "Save &Audio"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:349
+msgid "API Key Settings"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:351
+msgid "View voices in AI Studio"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:356
+msgid "&Close"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:365
+msgid "Select &Voice:"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:366
+#: addon\globalPlugins\nativeSpeechGeneration.py:382
+#: addon\globalPlugins\nativeSpeechGeneration.py:395
+msgid "Loading voices..."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:379
+msgid "Speaker 1 Name:"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:381
+#: addon\globalPlugins\nativeSpeechGeneration.py:394
+msgid "Voice:"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:392
+msgid "Speaker 2 Name:"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:475
+msgid "google-genai library not installed. Please restart NVDA."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:478
+msgid "No GEMINI_API_KEY configured. Set it in NVDA settings."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:482
+msgid "Please enter text to generate."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:485
+msgid "Generating..."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:491
+msgid "Generating speech, please wait..."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:496
+#, python-brace-format
+msgid "Failed to initialize Google GenAI client: {error}"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:502
+msgid "Failed to generate audio."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:504
+msgid "Generation complete."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:536
+msgid "An error occurred during generation."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:538
+#, python-brace-format
+msgid "An unexpected error occurred: {error}"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:569
+msgid "No inline audio data returned by model."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:582
+#, python-brace-format
+msgid "Failed to generate speech: {error}"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:591
+msgid "Save Audio File"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:598
+#, python-brace-format
+msgid "Audio saved to {path}"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:598
+msgid "Success"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:600
+#, python-brace-format
+msgid "Failed to save audio: {error}"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:611
+msgid "Sample not available"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:616
+msgid "Playing voice sample"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:621
+msgid "Failed to play sample"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:656
+msgid "&Native Speech Generation"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:656
+msgid "Generate speech using Gemini TTS"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:675
+msgid ""
+"The Native Speech Generation add-on is already open. Please close the dialog "
+"before opening it again."
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:677
+msgid "Add-on Already Running"
+msgstr ""
+
+#: addon\globalPlugins\nativeSpeechGeneration.py:689
+#, python-brace-format
+msgid "Failed to open Native Speech Generation dialog: {error}"
+msgstr ""
+
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+#: buildVars.py:21
+msgid "NativeSpeechGeneration"
+msgstr ""
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
+msgid ""
+"Harness the power of Google's state-of-the-art Gemini AI for high-quality "
+"speech generation directly within NVDA. This add-on provides a user-friendly "
+"dialog to convert text into natural-sounding audio.\n"
+"\n"
+"Key Features:\n"
+"- High-Quality Voices: Choose between Gemini Pro for premium, life-like "
+"speech and Gemini Flash for standard quality, responsive generation.\n"
+"- Single and Multi-Speaker Modes: Easily generate audio for a single speaker "
+"or create dynamic dialogues with two distinct speakers. Simply format your "
+"text with \"SpeakerName:\" to assign voices.\n"
+"- Advanced Voice Control: Fine-tune the output by adjusting the temperature "
+"for more creative or stable results, and provide custom style instructions.\n"
+"- Accessible Interface: All controls are fully accessible, including a "
+"collapsible panel for advanced settings to keep the interface clean and easy "
+"to navigate.\n"
+"- Seamless Workflow: The add-on provides instant audio playback upon "
+"generation and allows you to save the resulting .wav file for later use.\n"
+"\n"
+"To get started, obtain a Gemini API key from Google AI Studio and enter it "
+"in the add-on's settings panel, found under NVDA's Tools menu."
+msgstr ""
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:38
+msgid ""
+"Improved dialog stability with safe wx.CallAfter message handling, added API "
+"key visibility toggle in settings, implemented automatic NVDA restart after "
+"dependency installation, enhanced multi-speaker voice handling and sample "
+"playback, standardized error dialogs, and refactored code for cleaner "
+"structure and consistency."
+msgstr ""
