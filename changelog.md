@@ -11,6 +11,3 @@
 \* \*\*Localization:\*\* Added full support for the \*\*Russian\*\* language.
 
 \* \*\*Fix readme:\*\* Rewritten so that it is easier to understand
-
-
-

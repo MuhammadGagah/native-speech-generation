@@ -72,8 +72,8 @@ To get started, obtain a Gemini API key from Google AI Studio and enter it in th
 # https://scons.org/doc/production/HTML/scons-user/apd.html
 pythonSources: list[str] = [
 	"addon/installTasks.py",
-"addon/globalPlugins/nativeSpeechGeneration.py",
-"addon/globalPlugins/lib_updater.py",
+	"addon/globalPlugins/nativeSpeechGeneration.py",
+	"addon/globalPlugins/lib_updater.py",
 ]
 
 # Files that contain strings for translation. Usually your python sources
