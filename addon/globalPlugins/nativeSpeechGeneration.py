@@ -4,7 +4,7 @@ import mimetypes
 import struct
 import tempfile
 import threading
-import time
+
 import wave
 import webbrowser
 import asyncio
@@ -113,7 +113,7 @@ else:
         # We need 'typing_extensions' with 'Sentinel', but NVDA's version is too old.
         # We temporary replace it in sys.modules during our import, then restore the original.
         import sys
-        import importlib
+
         
         # 1. Save original NVDA module if it exists
         original_typing_ext = sys.modules.get('typing_extensions')
