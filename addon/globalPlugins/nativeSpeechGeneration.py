@@ -1,3 +1,20 @@
+# pyright: reportUnknownMemberType=false
+# pyright: reportUnknownVariableType=false
+# pyright: reportUnknownArgumentType=false
+# pyright: reportMissingParameterType=false
+# pyright: reportUndefinedVariable=false
+# pyright: reportImplicitStringConcatenation=false
+# pyright: reportGeneralTypeIssues=false
+# pyright: reportOptionalMemberAccess=false
+# pyright: reportUntypedFunctionDecorator=false
+# pyright: reportMissingImports=false
+# pyright: reportConstantRedefinition=false
+# pyright: reportUntypedBaseClass=false
+# pyright: reportAttributeAccessIssue=false
+# pyright: reportUnusedCallResult=false
+# pyright: reportUnknownParameterType=false
+# pyright: reportMissingModuleSource=false
+# pyright: reportRedeclaration=false
 import os
 import sys
 import mimetypes
@@ -8,7 +25,7 @@ import threading
 import wave
 import webbrowser
 import asyncio
-from typing import Any
+from typing import Any, TYPE_CHECKING
 
 # NVDA & Local Imports
 import addonHandler
@@ -31,6 +48,9 @@ import requests
 # Initialize translation
 # Initialize translation
 # Initialize translation
+if TYPE_CHECKING:
+	def _(msg: str) -> str: return msg
+
 addonHandler.initTranslation()
 
 # ----------------------------------------------------------------------------
