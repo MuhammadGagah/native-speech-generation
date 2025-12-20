@@ -32,7 +32,7 @@ Key Features:
 
 To get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu."""),
 	# version
-	addon_version="1.2",
+	addon_version="1.3",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
 	addon_changelog=_("""Improved dialog stability with safe wx.CallAfter message handling, added API key visibility toggle in settings, implemented automatic NVDA restart after dependency installation, enhanced multi-speaker voice handling and sample playback, standardized error dialogs, and refactored code for cleaner structure and consistency."""),
@@ -69,6 +69,7 @@ To get started, obtain a Gemini API key from Google AI Studio and enter it in th
 pythonSources: list[str] = [
 	"addon/installTasks.py",
 "addon/globalPlugins/nativeSpeechGeneration.py",
+"addon/globalPlugins/lib_updater.py",
 ]
 
 # Files that contain strings for translation. Usually your python sources
