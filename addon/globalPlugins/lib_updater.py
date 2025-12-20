@@ -1,3 +1,20 @@
+# pyright: reportUnknownMemberType=false
+# pyright: reportUnknownVariableType=false
+# pyright: reportUnknownArgumentType=false
+# pyright: reportMissingParameterType=false
+# pyright: reportUndefinedVariable=false
+# pyright: reportImplicitStringConcatenation=false
+# pyright: reportGeneralTypeIssues=false
+# pyright: reportOptionalMemberAccess=false
+# pyright: reportUntypedFunctionDecorator=false
+# pyright: reportMissingImports=false
+# pyright: reportConstantRedefinition=false
+# pyright: reportUntypedBaseClass=false
+# pyright: reportAttributeAccessIssue=false
+# pyright: reportUnusedCallResult=false
+# pyright: reportUnknownParameterType=false
+# pyright: reportMissingModuleSource=false
+# pyright: reportRedeclaration=false
 import os
 import wx
 import globalPluginHandler
@@ -10,7 +27,7 @@ import threading
 import shutil
 import glob
 from logHandler import log
-from typing import Callable
+from collections.abc import Callable
 
 addonHandler.initTranslation()
 

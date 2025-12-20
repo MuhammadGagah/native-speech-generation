@@ -49,7 +49,10 @@ import requests
 # Initialize translation
 # Initialize translation
 if TYPE_CHECKING:
-	def _(msg: str) -> str: return msg
+
+	def _(msg: str) -> str:
+		return msg
+
 
 addonHandler.initTranslation()
 
