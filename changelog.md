@@ -1,13 +1,26 @@
-\*\*changelog v1.3\*\*
+**changelog v1.5**
 
+* **New Feature:** Added "Grounding with Google Search" in Talk With AI.
+  * Allows the AI to search the web for real-time information.
+  * Toggle available in the Talk With AI dialog (disappears during active conversation).
 
+**changelog v1.4**
 
-\* \*\*Code Refactoring:\*\* Performed a comprehensive code cleanup and resolved dependency conflicts for better stability.
+* **New Feature: "Talk With AI" (Gemini Live):**
+  * Real-time, low-latency voice conversation with Gemini.
+  * Supports interruption (stop speaking to interrupt the AI).
+  * Uses the selected voice and style instructions from the main dialog.
+  
+* **Improvement:** Enhanced audio handling for smoother streaming.
 
-\* \*\*New Feature: "Reinstall Libraries":\*\* Added a utility to reinstall/refresh the `google-genai` library, specifically designed to resolve potential runtime errors.
+**changelog v1.3**
 
-\* \*\*Compatibility Update:\*\* The minimum requirement has been updated. \*\*NVDA 2024.1\*\* or higher is now required.
+* **Code Refactoring:** Performed a comprehensive code cleanup and resolved dependency conflicts for better stability.
 
-\* \*\*Localization:\*\* Added full support for the \*\*Russian\*\* language.
+* **New Feature: "Reinstall Libraries":** Added a utility to reinstall/refresh the `google-genai` library, specifically designed to resolve potential runtime errors.
 
-\* \*\*Fix readme:\*\* Rewritten so that it is easier to understand
+* **Compatibility Update:** The minimum requirement has been updated. **NVDA 2024.1** or higher is now required.
+
+* **Localization:** Added full support for the **Russian** language.
+
+* **Fix readme:** Rewritten so that it is easier to understand
