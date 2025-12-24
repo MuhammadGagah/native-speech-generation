@@ -52,6 +52,13 @@ This add-on is designed for smooth workflows, accessibility-first interaction, a
 * Available voices are fetched dynamically from the Gemini API.
 * Voice data is cached for **24 hours** to reduce API calls and speed up startup.
 
+### Talk With AI (Live Conversation)
+
+* **Real-time Voice Chat**: Have a natural, low-latency spoken conversation with Gemini.
+* **Grounding with Google Search**: Enable the AI to access real-time information from the web during your chat.
+* **Interruptible**: You can interrupt the AI at any time by speaking or pressing "Stop Conversation".
+* **Customizable**: Uses your selected voice and style instructions.
+
 ---
 
 ## Requirements
@@ -143,6 +150,23 @@ Bob: I'm doing great, Alice! The weather is fantastic.
 
 ---
 
+## Talk With AI (Live Mode)
+
+Experience a natural, two-way voice conversation with Gemini.
+
+1. Configure your desired **Voice** and **Style Instructions** in the main dialog.
+   *(Note: Talk With AI currently supports Single-speaker mode only)*
+2. Click **Talk With AI**.
+3. In the new window:
+   * **Start Conversation**: Begins the session. Speak into your microphone.
+   * **Stop Conversation**: Ends the session.
+   * **Grounding with Google Search**: Check this box to allow Gemini to search the web for answers (e.g., current news, weather).
+     * *Note: This checkbox is hidden while a conversation is active. Stop the conversation to change it.*
+   * **Microphone Toggle**: Mute/Unmute your microphone.
+   * **Volume**: Adjust the AI's playback volume.
+
+---
+
 ## Advanced Settings
 
 * Enable **Advanced Settings (Temperature)** to show the slider.
@@ -156,12 +180,13 @@ Bob: I'm doing great, Alice! The weather is fantastic.
 
 ## Buttons Overview
 
-* **Generate Speech** – Start speech generation.
-* **Play** – Replay the last generated audio.
-* **Save Audio** – Save the last audio as a `.wav` file.
-* **API Key Settings** – Open the add-on configuration in NVDA Settings.
-* **View voices in AI Studio** – Opens Google AI Studio in a browser.
-* **Close** – Close the dialog (or press `Escape`).
+* **Generate Speech** - Start speech generation.
+* **Play** - Replay the last generated audio.
+* **Talk With AI** - Open the real-time voice conversation interface.
+* **Save Audio** - Save the last audio as a `.wav` file.
+* **API Key Settings** - Open the add-on configuration in NVDA Settings.
+* **View voices in AI Studio** - Opens Google AI Studio in a browser.
+* **Close** - Close the dialog (or press `Escape`).
 
 ---
 
@@ -201,10 +226,10 @@ If you want to develop or modify this add-on, follow the steps below.
 
 ### Additional Dependencies
 
-Install the Gemini SDK directly into the add-on library path:
+Install the Gemini SDK and pyaudio directly into the add-on library path:
 
 ```
-python.exe -m pip install google-genai --target "D:/myAdd-on/Native-Speech-Generation/addon/globalPlugins/lib"
+python.exe -m pip install google-genai pyaudio --target "D:/myAdd-on/Native-Speech-Generation/addon/globalPlugins/NativeSpeechGeneration/lib"
 ```
 
 Adjust the path according to your local add-on source directory.
@@ -212,7 +237,7 @@ Adjust the path according to your local add-on source directory.
 Then copy the following from your Python installation into:
 
 ```
-addon/globalPlugins/lib
+addon/globalPlugins/NativeSpeechGeneration/lib
 ```
 
 * `zoneinfo` folder

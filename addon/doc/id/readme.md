@@ -1,56 +1,61 @@
-# Native Speech Generation untuk NVDA
+# Native Speech Generation for NVDA
 
-**Author:** Muhammad Gagah [muha.aku@gmail.com](mailto:muha.aku@gmail.com)
+**Penulis:** Muhammad Gagah [muha.aku@gmail.com](mailto:muha.aku@gmail.com)
 
-Native Speech Generation adalah add-on NVDA yang mengintegrasikan **Google Gemini AI** untuk menghasilkan suara alami berkualitas tinggi langsung di dalam NVDA.
-Add-on ini menyediakan antarmuka yang bersih, sepenuhnya aksesibel, dan dirancang untuk mengubah teks menjadi audio, baik dalam bentuk **narasi satu pembicara** maupun **dialog multi-pembicara**.
+Native Speech Generation adalah add-on NVDA yang mengintegrasikan **Google Gemini AI** untuk menghasilkan ucapan berkualitas tinggi dan terdengar alami langsung di dalam NVDA.
+Add-on ini menyediakan antarmuka yang bersih dan sepenuhnya dapat diakses untuk mengubah teks menjadi audio, mendukung **narasi pembicara tunggal** dan **dialog multi-pembicara yang dinamis**.
 
-Fokus utama add-on ini adalah workflow yang mulus, kemudahan akses bagi pengguna screen reader, serta kontrol suara yang fleksibel untuk berbagai kebutuhan seperti narasi, dialog, dan produksi audio.
+Add-on ini dirancang untuk alur kerja yang lancar, interaksi yang mengutamakan aksesibilitas, dan kontrol suara yang fleksibel, cocok untuk narasi, dialog, dan produksi konten audio.
 
 ---
 
 ## Fitur
 
-### Generasi Suara Berkualitas Tinggi
+### Pembuatan Ucapan Berkualitas Tinggi
 
-* Pilihan model:
-
-  * **Gemini Flash** – Kualitas standar, cepat, latensi rendah.
-  * **Gemini Pro** – Kualitas premium dengan suara lebih realistis (berbayar).
+* Pilih antara:
+  * **Gemini Flash**: Kualitas standar, pembuatan cepat, latensi rendah.
+  * **Gemini Pro**: Premium, suara lebih realistis (model berbayar).
 
 ### Mode Single & Multi-Speaker
 
-* **Single-speaker** untuk text-to-speech standar.
-* **Multi-speaker (2 pembicara)** untuk dialog dengan dua suara berbeda.
+* **Narasi pembicara tunggal** untuk text-to-speech standar.
+* **Mode multi-pembicara (2 pembicara)** untuk dialog dengan suara yang berbeda.
 
-### Kontrol Suara Lanjutan
+### Kontrol Suara Tingkat Lanjut
 
-* **Penamaan Speaker**
-  Pada mode multi-speaker, Anda dapat memberi nama unik (misalnya *John*, *Mary*).
-  AI akan secara otomatis memetakan suara berdasarkan nama speaker di teks.
-* **Instruksi Gaya Bicara**
-  Tambahkan prompt seperti *“Bicara dengan nada ceria”* atau *“Narasi dengan suara tenang”*.
+* **Penamaan Pembicara**
+  Tetapkan nama khusus (misalnya, *Budi*, *Siti*) dalam mode multi-pembicara.
+  AI secara otomatis memetakan suara berdasarkan nama pembicara dalam naskah.
+* **Instruksi Gaya**
+  Berikan petunjuk seperti *“Bicaralah dengan nada ceria”* atau *“Ceritakan dengan tenang”* untuk memandu penyampaian.
 * **Kontrol Temperatur**
-  Mengatur variasi dan kreativitas suara:
+  Sesuaikan variasi dan kreativitas output:
+  * Nilai lebih rendah → ucapan lebih stabil dan dapat diprediksi.
+  * Nilai lebih tinggi → ucapan lebih ekspresif dan bervariasi.
 
-  * Nilai rendah → lebih stabil dan konsisten.
-  * Nilai tinggi → lebih ekspresif dan bervariasi.
+### Antarmuka Bersih & Dapat Diakses
 
-### Antarmuka Aksesibel & Rapi
+* Sepenuhnya dapat diakses dengan pembaca layar.
+* Opsi lanjutan ditempatkan di panel yang dapat disembunyikan agar dialog utama tetap sederhana dan fokus.
 
-* Semua kontrol sepenuhnya mendukung screen reader.
-* Pengaturan lanjutan disembunyikan dalam panel yang dapat dibuka/tutup agar antarmuka utama tetap sederhana.
+### Alur Kerja yang Mulus
 
-### Workflow Mulus
+* Audio diputar secara otomatis setelah dibuat.
+* Audio yang dibuat dapat diputar ulang atau disimpan sebagai file `.wav` berkualitas tinggi.
+* Dirancang untuk meminimalkan hambatan selama pembuatan dan pemutaran berulang.
 
-* Audio diputar otomatis setelah proses generate selesai.
-* Audio terakhir dapat diputar ulang atau disimpan sebagai file `.wav` berkualitas tinggi.
-* Cocok untuk penggunaan berulang tanpa banyak langkah tambahan.
+### Pemuatan Suara Cerdas & Caching
 
-### Pemanggilan & Cache Suara Pintar
+* Suara yang tersedia diambil secara dinamis dari API Gemini.
+* Data suara disimpan dalam cache selama **24 jam** untuk mengurangi panggilan API dan mempercepat waktu mulai.
 
-* Daftar suara diambil langsung dari Gemini API.
-* Data suara di-cache selama **24 jam** untuk mempercepat startup dan mengurangi pemanggilan API.
+### Bicara dengan AI (Percakapan Langsung)
+
+* **Obrolan Suara Real-time**: Lakukan percakapan lisan yang alami dan latensi rendah dengan Gemini.
+* **Grounding dengan Pencarian Google**: Mengaktifkan AI untuk mengakses informasi real-time dari web selama obrolan Anda.
+* **Dapat Diinterupsi**: Anda dapat memotong pembicaraan AI kapan saja dengan berbicara atau menekan tombol "Hentikan Percakapan".
+* **Dapat Disesuaikan**: Menggunakan suara dan instruksi gaya yang Anda pilih.
 
 ---
 
@@ -58,173 +63,186 @@ Fokus utama add-on ini adalah workflow yang mulus, kemudahan akses bagi pengguna
 
 * NVDA (versi terbaru direkomendasikan).
 * Koneksi internet aktif.
-* **Google Gemini API Key** yang valid.
+* **Kunci API Google Gemini** yang valid.
 
 ---
 
 ## Instalasi
 
-1. Unduh add-on versi terbaru dari halaman
-   **Releases:**
+1. Unduh paket add-on terbaru dari
+   **Halaman Rilis:**
    [https://github.com/MuhammadGagah/native-speech-generation/releases](https://github.com/MuhammadGagah/native-speech-generation/releases)
-2. Instal seperti add-on NVDA pada umumnya.
-3. Restart NVDA setelah instalasi selesai.
+2. Instal seperti add-on NVDA standar lainnya.
+3. Mulai ulang NVDA saat diminta.
 
 ---
 
-## Pengaturan API Key (Wajib)
+## Pengaturan Kunci API (Wajib)
 
-1. Buat API key melalui **Google AI Studio**:
+1. Buat kunci API dari **Google AI Studio**:
    [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
-2. Buka NVDA lalu masuk ke:
-   **Menu NVDA → Tools → Native Speech Generation**
-3. Klik tombol **“API Key Settings”**.
-4. NVDA Settings akan terbuka langsung pada kategori *Native Speech Generation*.
-5. Tempelkan **Gemini API Key** Anda pada kolom *GEMINI API Key*.
+2. Buka NVDA dan pergi ke:
+   **Menu NVDA → Alat → Native Speech Generation**
+3. Klik **“Pengaturan Kunci API”**.
+4. Ini membuka Pengaturan NVDA langsung di kategori *Native Speech Generation*.
+5. Tempelkan **Kunci API Gemini** Anda ke dalam kolom *Kunci API Gemini*.
 6. Klik **OK** untuk menyimpan.
 
 ---
 
-## Cara Menggunakan Add-on
+## Cara Menggunakan
 
-Buka dialog Native Speech Generation dengan:
+Buka dialog menggunakan:
 
 * **NVDA+Control+Shift+G**, atau
-* **Menu NVDA → Tools → Native Speech Generation**
+* **Menu NVDA → Alat → Native Speech Generation**
 
 ### Elemen Antarmuka Utama
 
-* **Text to convert**
-  Area teks utama untuk mengetik atau menempelkan teks.
-* **Style instructions (opsional)**
-  Digunakan untuk mengatur gaya dan ekspresi suara.
-* **Select Model**
-
+* **Teks untuk dikonversi**
+  Masukkan atau tempel teks yang ingin Anda ubah menjadi ucapan.
+* **Instruksi gaya (opsional)**
+  Berikan panduan untuk nada, emosi, atau penyampaian.
+* **Pilih Model**
   * Flash (Kualitas Standar)
   * Pro (Kualitas Tinggi)
-* **Speaker Mode**
-
-  * Single-speaker
-  * Multi-speaker (2)
-
----
-
-## Menghasilkan Suara
-
-### Mode Single-Speaker
-
-1. Pilih **Single-speaker**.
-2. Pilih suara dari dropdown *Select Voice*.
-3. Masukkan teks.
-4. Tambahkan instruksi gaya (opsional).
-5. Klik **Generate Speech**.
-6. Audio akan diputar otomatis setelah selesai.
+* **Mode Pembicara**
+  * Pembicara tunggal
+  * Multi-pembicara (2)
 
 ---
 
-### Mode Multi-Speaker
+## Menghasilkan Ucapan
 
-1. Pilih **Multi-speaker (2)**.
-2. Untuk setiap speaker:
+### Mode Pembicara Tunggal
 
-   * Isi **Speaker Name** dengan nama unik.
-   * Pilih **Voice** yang berbeda.
-3. Format teks dengan nama speaker di awal baris diikuti tanda titik dua.
+1. Pilih **Pembicara tunggal**.
+2. Pilih suara dari menu dropdown *Pilih Suara*.
+3. Masukkan teks Anda.
+4. (Opsional) tambahkan instruksi gaya.
+5. Klik **Hasilkan Ucapan**.
+6. Audio akan diputar secara otomatis setelah pembuatan selesai.
+
+---
+
+### Mode Multi-Pembicara
+
+1. Pilih **Multi-pembicara (2)**.
+2. Untuk setiap pembicara:
+   * Masukkan **Nama Pembicara** yang unik.
+   * Pilih **Suara** yang berbeda.
+3. Format teks sehingga setiap baris dimulai dengan nama pembicara diikuti oleh tanda titik dua.
 
 **Contoh:**
 
 ```
 Alice: Hai Bob, apa kabar hari ini?
-Bob: Baik sekali, Alice. Cuacanya cerah!
+Bob: Aku baik-baik saja, Alice! Cuacanya luar biasa.
 ```
 
-4. Klik **Generate Speech**.
-   AI akan membaca dialog dan mencocokkan suara berdasarkan nama speaker.
+4. Klik **Hasilkan Ucapan**.
+   Suara akan ditetapkan secara otomatis berdasarkan nama pembicara.
+
+---
+
+## Bicara dengan AI (Mode Langsung)
+
+Rasakan percakapan suara dua arah yang alami dengan Gemini.
+
+1. Konfigurasikan **Suara** dan **Instruksi Gaya** yang diinginkan di dialog utama.
+   *(Catatan: Bicara dengan AI saat ini hanya mendukung mode Pembicara Tunggal)*
+2. Klik **Bicara dengan AI**.
+3. Di jendela baru:
+   * **Mulai Percakapan**: Memulai sesi. Bicaralah ke mikrofon Anda.
+   * **Hentikan Percakapan**: Mengakhiri sesi.
+   * **Grounding dengan Google Search**: Centang kotak ini untuk mengizinkan Gemini menelusuri web guna mencari jawaban (misalnya, berita terkini, cuaca).
+     * *Catatan: Kotak centang ini disembunyikan saat percakapan sedang aktif. Hentikan percakapan untuk mengubahnya.*
+   * **Tombol Mikrofon**: Bisukan/Bunyikan mikrofon Anda.
+   * **Volume**: Sesuaikan volume pemutaran AI.
 
 ---
 
 ## Pengaturan Lanjutan
 
-* Aktifkan **Advanced Settings (Temperature)** untuk menampilkan slider.
-* **Rentang Temperature**:
-
-  * `0.0` → Paling stabil dan deterministik.
-  * `1.0` → Nilai default (seimbang).
+* Aktifkan **Pengaturan Lanjutan (Suhu)** untuk menampilkan slider.
+* **Rentang Temperatur**:
+  * `0.0` → Paling deterministik dan stabil.
+  * `1.0` → Keseimbangan default.
   * `2.0` → Paling kreatif dan bervariasi.
 
 ---
 
-## Fungsi Tombol
+## Tinjauan Tombol
 
-* **Generate Speech** – Memulai proses generasi suara.
-* **Play** – Memutar ulang audio terakhir.
-* **Save Audio** – Menyimpan audio terakhir ke file `.wav`.
-* **API Key Settings** – Membuka pengaturan add-on di NVDA Settings.
-* **View voices in AI Studio** – Membuka Google AI Studio di browser.
-* **Close** – Menutup dialog (atau tekan `Escape`).
+* **Hasilkan Ucapan** - Mulai pembuatan ucapan.
+* **Putar** - Memutar ulang audio yang terakhir dibuat.
+* **Bicara dengan AI** - Buka antarmuka percakapan suara real-time.
+* **Simpan Audio** - Simpan audio terakhir sebagai file `.wav`.
+* **Pengaturan Kunci API** - Buka konfigurasi add-on di Pengaturan NVDA.
+* **Lihat suara di AI Studio** - Membuka Google AI Studio di browser.
+* **Tutup** - Tutup dialog (atau tekan `Escape`).
 
 ---
 
-## Input Gesture
+## Gestur Input
 
-Dapat diubah melalui:
-**Menu NVDA → Preferences → Input Gestures → Native Speech Generation**
+Dapat disesuaikan melalui:
+**Menu NVDA → Preferensi → Gestur Input → Native Speech Generation**
 
-Gesture bawaan:
+Gestur default:
 
-* **NVDA+Control+Shift+G** – Membuka dialog Native Speech Generation.
+* **NVDA+Control+Shift+G** – Buka dialog Native Speech Generation.
 
 ---
 
 ## Panduan Pengembangan & Kontribusi
 
-Jika Anda ingin mengembangkan atau memodifikasi add-on ini, ikuti langkah berikut.
+Jika Anda ingin mengembangkan atau memodifikasi add-on ini, ikuti langkah-langkah di bawah ini.
 
-### Persiapan Lingkungan
+### Pengaturan Lingkungan
 
-* **Python 32-bit (disarankan 3.11.9)**
+* **Python 32-bit (direkomendasikan 3.11.9)**
   [https://www.python.org/downloads/release/python-3119/](https://www.python.org/downloads/release/python-3119/)
 * **SCons 4.9.1 atau lebih baru**
 
   ```
   pip install scons
   ```
-* **GNU Gettext Tools** (opsional, direkomendasikan untuk lokalisasi)
-
-  * Biasanya sudah tersedia di Linux/Cygwin.
+* **Alat GNU Gettext** (opsional, disarankan untuk lokalisasi)
+  * Biasanya sudah terinstal di Linux/Cygwin.
   * Windows: [https://gnuwin32.sourceforge.net/downlinks/gettext.php](https://gnuwin32.sourceforge.net/downlinks/gettext.php)
-* **Markdown 3.8 atau lebih baru**
+* **Markdown 3.8+** (untuk konversi dokumentasi)
 
   ```
   pip install markdown
   ```
 
-### Dependensi Tambahan
+### Ketergantungan Tambahan
 
-Install library Gemini langsung ke folder library add-on:
-
-```
-python.exe -m pip install google-genai --target "D:/myAdd-on/Native-Speech-Generation/addon/globalPlugins/lib"
-```
-
-Sesuaikan path dengan lokasi source add-on Anda.
-
-Kemudian salin dari instalasi Python Anda ke:
+Instal Gemini SDK dan pyaudio langsung ke jalur pustaka add-on:
 
 ```
-addon/globalPlugins/lib
+python.exe -m pip install google-genai pyaudio --target "D:/myAdd-on/Native-Speech-Generation/addon/globalPlugins/NativeSpeechGeneration/lib"
 ```
 
-* Folder `zoneinfo`
-* File `secrets.py`
+Sesuaikan jalur dengan direktori sumber add-on lokal Anda.
+
+Kemudian salin file berikut dari instalasi Python Anda ke dalam:
+
+```
+addon/globalPlugins/NativeSpeechGeneration/lib
+```
+
+* folder `zoneinfo`
+* file `secrets.py`
 
 ---
 
-## Kontribusi
+## Berkontribusi
 
-Masukan, ide, dan laporan bug sangat diterima.
+Kontribusi, saran, dan laporan bug sangat kami harapkan.
 
-* Buat **Issue** untuk bug atau permintaan fitur.
+* Buka **Issue** untuk bug atau permintaan fitur.
 * Kirim **Pull Request** untuk kontribusi kode.
 
 **Kontak**

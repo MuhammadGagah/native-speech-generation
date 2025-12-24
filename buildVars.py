@@ -32,11 +32,13 @@ Key Features:
 
 To get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu."""),
 	# version
-	addon_version="1.3",
+	addon_version="1.5",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
 	addon_changelog=_("""- Refactor codebase and fix dependency issues
 - Add "Reinstall Libraries" feature to replace google-genai on errors
+- New Feature: "Talk With AI" (Gemini Live)
+- New Feature: Added "Grounding with Google Search" in Talk With AI.
 - Update compatibility: require minimum NVDA 2024.1
 - Add Russian translation
 - Fix README file issues."""),
@@ -72,8 +74,9 @@ To get started, obtain a Gemini API key from Google AI Studio and enter it in th
 # https://scons.org/doc/production/HTML/scons-user/apd.html
 pythonSources: list[str] = [
 	"addon/installTasks.py",
-	"addon/globalPlugins/nativeSpeechGeneration.py",
-	"addon/globalPlugins/lib_updater.py",
+"addon/globalPlugins/NativeSpeechGeneration/__init__.py",
+"addon/globalPlugins/NativeSpeechGeneration/lib_updater.py",
+"addon/globalPlugins/NativeSpeechGeneration/talkWithAI.py",
 ]
 
 # Files that contain strings for translation. Usually your python sources
@@ -83,7 +86,9 @@ i18nSources: list[str] = pythonSources + ["buildVars.py"]
 # Paths are relative to the addon directory, not to the root directory of your addon sources.
 # You can either list every file (using ""/") as a path separator,
 # or use glob expressions.
-excludedFiles: list[str] = []
+excludedFiles: list[str] = [
+"addon/globalPlugins/lib/*",
+]
 
 # Base language for the NVDA add-on
 # If your add-on is written in a language other than english, modify this variable.
