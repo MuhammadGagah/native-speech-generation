@@ -10,6 +10,7 @@
   * Real-time, low-latency voice conversation with Gemini.
   * Supports interruption (stop speaking to interrupt the AI).
   * Uses the selected voice and style instructions from the main dialog.
+  You must reinstall the library to use the Talk with AI feature.
   
 * **Improvement:** Enhanced audio handling for smoother streaming.
 
