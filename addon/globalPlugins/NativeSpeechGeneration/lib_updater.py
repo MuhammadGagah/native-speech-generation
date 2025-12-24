@@ -27,7 +27,7 @@ def cleanup_trash() -> None:
     Run this at startup when files are likely unlocked.
     """
     try:
-        gp_base = os.path.join(ADDON_DIR, "globalPlugins")
+        gp_base = os.path.dirname(os.path.abspath(__file__))
         trash_pattern = os.path.join(gp_base, "lib_trash_*")
         for trash_dir in glob.glob(trash_pattern):
             if os.path.isdir(trash_dir):
@@ -76,10 +76,8 @@ def download_and_extract(addon_dir: str, progress_callback: Callable[[int, str],
 
         # Extract the zip file
         with zipfile.ZipFile(zip_path, "r") as zip_ref:
-            # We enforce extracting into globalPlugins, assuming the zip contains 'lib' folder or similar structure.
-            # Based on previous code: zip_ref.extractall(os.path.join(addon_dir, "globalPlugins"))
-            # If the zip contains "lib/..." inside, extracting to globalPlugins creates globalPlugins/lib
-            zip_ref.extractall(os.path.join(addon_dir, "globalPlugins"))
+            # Extract into the package directory (NativeSpeechGeneration)
+            zip_ref.extractall(os.path.dirname(os.path.abspath(__file__)))
 
         log.info("Extraction complete.")
         wx.CallAfter(progress_callback, 100, _("Extraction complete."))
