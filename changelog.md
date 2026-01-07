@@ -1,3 +1,8 @@
+**changelog v1.5.1**
+
+- Fix issue with SSL.
+- Fixing libraries that conflict with other add-ons.
+
 **changelog v1.5**
 
 * **New Feature:** Added "Grounding with Google Search" in Talk With AI.

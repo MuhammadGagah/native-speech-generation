@@ -110,10 +110,16 @@ else:
     IMPORT_ERROR_MSG = None
     try:
         # Dependency Conflict Resolution (Scoped / Safe Mode)
-        # We handle typing_extensions conflict that can happen in some NVDA environments
-        original_typing_ext = sys.modules.get("typing_extensions")
-        if "typing_extensions" in sys.modules:
-            del sys.modules["typing_extensions"]
+        # We handle conflicts for libraries that might be loaded by other add-ons (like pydantic in nvdaChatGPT)
+        # functionality: We temporarily unload these modules from sys.modules so our local versions (in lib/) are picked up.
+        # We essentially force a reload from our sys.path[0].
+        conflicting_libs = ["typing_extensions", "pydantic", "pydantic_core", "annotated_types"]
+        original_modules = {}
+
+        for lib in conflicting_libs:
+            if lib in sys.modules:
+                original_modules[lib] = sys.modules[lib]
+                del sys.modules[lib]
         try:
             from google import genai
             from google.genai import types
@@ -121,8 +127,9 @@ else:
             GENAI_AVAILABLE = True
             log.info("google-genai loaded successfully.")
         finally:
-            if original_typing_ext:
-                sys.modules["typing_extensions"] = original_typing_ext
+            # Restore original modules if they were present to avoid breaking other add-ons
+            for lib, module in original_modules.items():
+                sys.modules[lib] = module
     except Exception as e:
         genai = None
         types = None
